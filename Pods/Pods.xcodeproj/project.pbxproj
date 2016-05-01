@@ -75,6 +75,7 @@
 		A56A3CF9A6D114D477BA4D3A00F4B827 /* SpectaDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF19E448F84B2F38BD043A819472998 /* SpectaDSL.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A62DC4393719CD8688E956451FF0245F /* SPTSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E77F7FA70F0A04BEBE4B7B5FF605002 /* SPTSpec.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A642C7125405123A22FD8D7995A8BB88 /* EXPMatchers+beCloseTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B9772CED1589B8A1904664C088119C /* EXPMatchers+beCloseTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A7B21F051CD625B600C3DA3C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31DC802B1F725960B0D821347C18D1E5 /* XCTest.framework */; };
 		A880F7AA9197C21CAED9522E52376B56 /* EXPMatchers+beIdenticalTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A539F49EAFBA89818640C724D540AA9 /* EXPMatchers+beIdenticalTo.h */; };
 		A90D195405682FE62B855C1AE68E80CC /* SPTGlobalBeforeAfterEach.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F4158EBD4E8E18F2AF4568A2617E694 /* SPTGlobalBeforeAfterEach.h */; };
 		A96BF5B8FE592F34BAE4F039D86743D0 /* EXPMatchers+raise.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AECDDD8BCFF3EE56B92044507FC056 /* EXPMatchers+raise.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -268,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BA6B6711CF0F158A1A21B8CAB55B548 /* Foundation.framework in Frameworks */,
+				A7B21F051CD625B600C3DA3C /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -736,7 +738,10 @@
 			baseConfigurationReference = B7989BF9A134F70BA679FD1C6E0CB6F1 /* Expecta-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXPECTA_FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREFIX_HEADER = "Target Support Files/Expecta/Expecta-prefix.pch";
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
@@ -752,7 +757,9 @@
 			baseConfigurationReference = B7989BF9A134F70BA679FD1C6E0CB6F1 /* Expecta-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREFIX_HEADER = "Target Support Files/Expecta/Expecta-prefix.pch";
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";

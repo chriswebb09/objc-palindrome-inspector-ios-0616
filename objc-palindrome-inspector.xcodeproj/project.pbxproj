@@ -14,6 +14,7 @@
 		5A2BC7F419A7E4069A2D480C /* FISAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 170BA10CE32B2647F85950FE /* FISAppDelegate.m */; };
 		5B89BBCE389387DBB12672FC /* Images.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = 421DDCAC4E070E660E9AED8B /* Images.xcassets */; };
 		6CDC06ACA2FB97DF19A5B4D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A72462C7B33982C17CDAEDD4 /* Main.storyboard */; };
+		A7B21F081CD625F100C3DA3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63B16825D1D62A166411FE4 /* Foundation.framework */; };
 		CA0B508F8D40E29E0E0EBAAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D32884263D7F2B9D946441D /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06BC186A9150A3775DD4F327 /* libPods-unit_tests.a in Frameworks */,
+				A7B21F081CD625F100C3DA3C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +222,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = FIS;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "The Flatiron School";
 			};
 			buildConfigurationList = 631C4A9C065B567D92D71F73 /* Build configuration list for PBXProject "objc-palindrome-inspector" */;
@@ -371,7 +373,7 @@
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_VALUE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				ONLY_ACTIVE_ARCH = YES;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
@@ -389,6 +391,7 @@
 				INFOPLIST_FILE = "objc-palindrome-inspector/Resources/Other-Sources/objc-palindrome-inspector-Info.plist";
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
 					"-DNS_BLOCK_ASSERTIONS=1",
 					"$(inherited)",
@@ -423,6 +426,7 @@
 				INFOPLIST_FILE = "objc-palindrome-inspector/Resources/Other-Sources/objc-palindrome-inspector-Info.plist";
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flatironschool.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
@@ -471,7 +475,7 @@
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_VALUE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
